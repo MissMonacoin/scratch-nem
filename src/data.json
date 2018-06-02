@@ -3,15 +3,25 @@
   "descriptor": {
     "en": {
       "blocks": [
-        [" ", "alert %s", "alert", "Hello!"]
+        [" ", "send %n %m.currencies to address %s", "send",1, "monacoin","M9xDeduVLRmjg2s7etaY2tXM8GgS8KD1n8"],
+        [" ", "open Monya with parameter %s", "openMonya",""],
+        ["w", "get balance of address %s", "getBalance","NDQBFLFVMHL4EM73BUR7AWFUXV4HDBT5OB2YDBIE"],
+        ["w", "get owned mosaics of address %s", "getOwnedMosaics","NDQBFLFVMHL4EM73BUR7AWFUXV4HDBT5OB2YDBIE"],
+        ["r", "get return value of previous command", "getRetVal"],
+        ["r", "get return value of previous command from key %s (dot splitted path)", "getRetValKey"],
+        ["r", "get hash of data %s algo %s", "getHash","hello world","sha256"],
+        ["r", "get address from private key %s", "getAddressFromPrivHex"],
+        ["w", "send %n XEM to %s of private key %s", "sendXEM"],
+        [" ", "get qr code of %s", "getQRCode"],
       ],
-      "menus": {}
+      "menus": {"currencies":["monacoin","bitzeny","bitcoin","litecoin","fujicoin","bitcoin","bitcoincash","koto","dash","zcash","yajucoin","neetcoin","ripple","nem","nekonium","ethereum","etherclassic"]}
     },
     "ja": {
       "blocks": [
-        [" ", "%s とアラートを出す", "alert", "こんにちは!"]
+        [" ", "%n %m.menus をアドレス %s に送る", "send",1, "monacoin","M9xDeduVLRmjg2s7etaY2tXM8GgS8KD1n8"],
+        [" ", "パラメータ %s でもにゃを開く", "openMonya",""],
       ],
-      "menus": {}
+      "menus": {"currencies":["monacoin","bitzeny","bitcoin","litecoin","fujicoin","bitcoin","bitcoincash","koto","dash","zcash","yajucoin","neetcoin","ripple","nem","nekonium","ethereum","etherclassic"]}
     }
   }
 }
